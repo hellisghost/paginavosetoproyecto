@@ -60,7 +60,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: rgb(49, 216, 7);
+    color: rgb(245, 245, 245);
+    box-shadow: 0 10px 25px rgb(255, 0, 0);
+    background-color: rgb(255, 115, 0);
+    border-radius: 40px;
     font-size: 5em;
     text-transform: uppercase;
     font: arial;
@@ -72,11 +75,8 @@
 
 
 body {
-    background: url(../imagenes/descarga.jpg);
+    background: url(../imagenes/074ad978-ea85-4d7a-890d-a4ecdd0fe4c3.jpg);
     background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
-
-margin: 0;
-height: 0;
 }
