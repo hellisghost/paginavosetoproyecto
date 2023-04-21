@@ -1,0 +1,29 @@
+* {
+    background-color: rgb(4, 0, 255);
+    color: white;
+}
+
+body{
+     padding: 38px;
+     text-align: center;
+}
+
+button{
+    background-color: rgb(251, 252, 252);
+    color: black;
+    border-radius: 10px;
+    border-color: rgb(30, 255, 0);
+    border-width: 5px;
+    line-height: 25px;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+button:hover {
+    background-color: rgb(8, 243, 20);
+    transition: .5s all;
+}
+input {
+    background-color: aliceblue;
+    color: black;
+}
