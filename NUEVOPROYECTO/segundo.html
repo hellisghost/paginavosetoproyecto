@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>ficha tecnica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <h1 class="titulo" >FORMATO DE FICHA TECNICA</h1>
+    <h2 class="parrafo">caracteristicas del producto</h2>
+    <h4>nombre con el que será identificado el producto</h4>
+    <p>
+        <input type="text" id="nom_producto" placeholder="nombre del producto">
+    </p>
+    <h4>a qué sistema pertenece.</h4>
+    <p>
+        <input type="text" id="sim_producto" placeholder="linea producto"> 
+    </p>
+    <h4>número y nombre del último desarrollo del producto.</h4>
+    <p>
+        <input type="text" id="vat_producto" placeholder="verciones anteriores">
+    </p>
+    <h4>número con el que se identificará el nuevo producto</h4>
+    <p>
+        <input type="text" id="va_producto" placeholder="vercion actual">
+    </p>
+    <h4>nombre técnico del módulo</h4>
+    <p>
+        <input type="text" id="mo_producto" placeholder="modulo">
+    </p>
+    <h2 class="parrafo">Descripcion Del Producto</h2>
+    <h4>descripción breve del nombre del producto</h4>
+    <p>
+        <input type="text" id="mi_producto" placeholder="Descripción del producto">
+    </p>
+        <button onclick="getfiche()">ENVIAR</button>
+        
+
+    
+    <h3 class="parrafo">↓Nombre producto </h3><p id="ros_producto">
+    </p>
+    <h3 class="parrafo">↓linea producto</h3><p class="pp" id="res_producto">   
+    </p>
+    <h3 class="parrafo">↓verciones anteriores</h3><p class="pp" id="ris_producto">
+    </p>
+    <h3 class="parrafo">↓vercion actual</h3><p class="pp" id="rus_producto">
+    </p>
+    <h3 class="parrafo">↓modulo</h3><p class="pp" id="rrs_producto">
+    </p>
+    <h3 class="parrafo">↓descripccion del producto</h3><p class="pp" id="rps_producto">
+    </p>
+  
+</body>
+</html>

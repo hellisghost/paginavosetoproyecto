@@ -1,0 +1,16 @@
+body{
+    background: rgb(253, 253, 253);
+    color: rgb(0, 0, 0);
+}
+.titulo{
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+.parrafo{
+    font-family: 'Righteous', cursive;
+}
+.pp{
+   
+    font-family: 'Righteous', cursive
+}
+
