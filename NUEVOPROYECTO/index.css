@@ -1,5 +1,10 @@
 body {
-    color: rgb(94, 255, 0);
-    background-color: cadetblue;
+    color: rgb(255, 8, 0);
     text-align: center;
+    padding: 30px;
+    background: url(/R.jpg);
+    background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
 }
