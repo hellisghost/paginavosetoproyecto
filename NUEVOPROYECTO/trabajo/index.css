@@ -1,16 +1,19 @@
 *{
     background-color: rgb(251, 253, 248);
-    color: rgb(13, 250, 250);
+    color: rgb(250, 187, 13);
 }
-body{
-    text-align: center;
+fieldset{
     padding: 50px;
+
 }
 
 button{
     color: black;
 }
 
-.botones{
-    padding: 60px;
+body{
+    padding: 50px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
 }

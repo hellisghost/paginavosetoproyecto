@@ -4,26 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.CSS">
+    <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
-    <title>para productos</title>
+    
+    <title>trabajo</title>
 </head>
 <body>
-    <fieldset>
-    <h1>CANTIDAD</h1><input type="number" id="numero1" placeholder="ingrese un cantidad">
-    <h1>VALOR</h1><input type="number" id="numero2" placeholder="ingrese el valor">
+    
+<fieldset>
+        
+    <div class="container">
+        <div class="primer">
+            <label for="cantidad">cantidad</label>
+            <input type="number" name="cantidad" id="cantidad">
+        </div>
+        <div class="primer">
+            <label for="valor">valor</label>
+            <input type="number" name="valor" id="valor">
+        </div>
+        <div class="primer">
+            <label for="descuentos"></label>
+            <button onclick="quince()">descuento del 15%</button>
+            <button onclick="cincuenta()">descuento del 50%</button>
+            <button onclick="nada()">sin descuento</button>
+        </div>
 
-    <div class="botones">
-   <button onclick="descuento1()">descuento del 15%</button>
-   <button onclick="descuento2()">descuento del 50%</button>
-   <button onclick="descuento3()">sin descuento</button>
+        <p id="resultado"></p>
+
     </div>
 
-
-    <p id="respuesta"></p>
-    <p id="descuento"></p>
-
-</fieldset>
+    </fieldset>
 
 </body>
 </html>

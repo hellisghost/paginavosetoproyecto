@@ -1,41 +1,21 @@
-function descuento1(){
-    let n1
-    n1 = document.getElementById("numero1").value
-   let n2
-    n2 = document.getElementById("numero2").value
-
-    let descuento1
-    descuento1 = document.getElementById("descuento").value
-
-descuento1 = n1*n2/descuento1
-document.getElementById("respuesta").innerHTML = 
-"<div> el valor es " +n1*n2/descuento1+"</div>"
+function quince(){
+    let resultado = document.getElementById("resultado");
+    let cantidad = document.getElementById("cantidad").value;
+    let valor = document.getElementById("valor").value;
+    let descuento = 0.15 * (valor * cantidad)
+    resultado.innerText = descuento
 }
-
-function descuento2(){
-    let n1
-    n1 = document.getElementById("numero1").value
-   let n2
-    n2 = document.getElementById("numero2").value
-
-    let descuento2
-    descuento2 = document.getElementById("descuento").value
-
-descuento2 = n1*n2/descuento2
-document.getElementById("respuesta").innerHTML = 
-"<div> el valor es " +n1*n2/descuento2+"</div>"
+function cincuenta(){
+    let resultado = document.getElementById("resultado");
+    let cantidad = document.getElementById("cantidad").value;
+    let valor = document.getElementById("valor").value;
+    let descuento = 0.5 * (valor * cantidad)
+    resultado.innerText = descuento
 }
-
-function descuento3(){
-    let n1
-    n1 = document.getElementById("numero1").value
-   let n2
-    n2 = document.getElementById("numero2").value
-
-    let descuento3
-    descuento3 = document.getElementById("descuento").value
-
-descuento3 = n1*n2/descuento3
-document.getElementById("respuesta").innerHTML = 
-"<div> el valor es " +n1*n2/descuento3+"</div>"
+function nada(){
+    let resultado = document.getElementById("resultado");
+    let cantidad = document.getElementById("cantidad").value;
+    let valor = document.getElementById("valor").value;
+    let calculo = valor * cantidad
+    resultado.innerText = calculo
 }
