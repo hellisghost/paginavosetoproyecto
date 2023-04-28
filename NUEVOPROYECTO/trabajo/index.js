@@ -2,9 +2,9 @@ function quince(){
     let resultado = document.getElementById("resultado");
     let cantidad = document.getElementById("cantidad").value;
     let valor = document.getElementById("valor").value;
-    let descuento = 0.15 * (valor * cantidad)
+    let descuento = 0.85 * (valor * cantidad)
     resultado.innerText = descuento}
-    
+
 function cincuenta(){
     let resultado = document.getElementById("resultado");
     let cantidad = document.getElementById("cantidad").value;

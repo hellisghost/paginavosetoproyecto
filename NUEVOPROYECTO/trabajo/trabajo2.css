@@ -1,0 +1,12 @@
+.container{
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+}
+.boton{
+    text-align: center;
+}
+
+.los{
+    text-align: end;
+}
