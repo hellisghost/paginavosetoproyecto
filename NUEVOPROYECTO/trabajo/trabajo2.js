@@ -1,28 +1,54 @@
-function valortotal(){
-    let resultado1 = document.getElementById("resultado1");    
-    let resultado2 = document.getElementById("resultado2");
-    let resultado3 = document.getElementById("resultado3");
-    let cantidad1 = document.getElementById("cantidad1").value;
-    let valor1 = document.getElementById("valor1").value;
-    let sumatotal1 = valor1 * cantidad1
-    let cantidad2 = document.getElementById("cantidad2").value;
-    let valor2 = document.getElementById("valor2").value;
-    let sumatotal2 = valor2 * cantidad2
-    resultado1.innerText = sumatotal1
-    resultado2.innerText = sumatotal2
-    resultado3.innerText = sumatotal1 + sumatotal2
+function calcular(){
+    var cantidad1 = document.getElementById('cantidad1').value
+    var precio1 = document.getElementById('precio1').value
+    var total1 = precio1 * cantidad1
+    document.getElementById('total1').innerText = total1
+
+    var cantidad2 = document.getElementById('cantidad2').value
+    var precio2 = document.getElementById('precio2').value
+    var total2 = cantidad2 * precio2
+    document.getElementById('total2').innerText = total2
+    calcularTotal(total1, total2)
+
 }
 
-function getfiche(){
-    
-    let produc = document.getElementById("cantidad1").value;
-    let melo = document.getElementById("valor1").value;
-    document.getElementById("factura1").innerText = produc;
-    document.getElementById("factura2").innerText = melo;
-    let factura1 = valor1 * cantidad1
-    factura1. innerText = factura1
-    let perro = document.getElementById("cantidad2").value;
-    document.getElementById("factura3").innerText = perro;
-    let manuel = document.getElementById("valor2").value;
-    document.getElementById("factura4").innerText = manuel;
+function precio1() {
+    var selectProduct1 = document.getElementById("productos")
+    var precio1 = selectProduct1.options[selectProduct1.selectedIndex].value
+    var inputPrecio1 = document.getElementById("precio1")
+    inputPrecio1.value = precio1
 }
+
+function precio2(){
+    var selectProduct2 = document.getElementById("productos2")
+    var precio2 = selectProduct2.options[selectProduct2.selectedIndex].value
+    var inputPrecio2 = document.getElementById("precio2")
+    inputPrecio2.value = precio2
+}
+
+function calcularTotal(precio1, precio2) {
+    document.getElementById('totalAbsoluto').innerText = parseInt(precio1) + parseInt(precio2)
+}
+
+function getFactura() {
+    var selectProducto1 = document.getElementById('productos')
+    var nomProducto1 = selectProducto1.options[selectProducto1.selectedIndex].innerText
+
+    var selectProducto2 = document.getElementById('productos2')
+    var nomProducto2 = selectProducto2.options[selectProducto2.selectedIndex].innerText
+
+    var cantidad1 = document.getElementById('cantidad1').value
+    var cantidad2 = document.getElementById('cantidad2').value
+
+    var precio1 = document.getElementById('precio1').value
+    var precio2 = document.getElementById('precio2').value
+
+    var factura = document.getElementById('factura')
+    factura.innerHTML = `<li><p>${nomProducto1}</p><p>${cantidad1}</p><p>${precio1}</p></li>`
+    factura.innerHTML += `<li><p>${nomProducto2}</p><p>${cantidad2}</p><p>${precio2}</p></li>`
+    factura.innerHTML += `<li><p>total</p><p>${(cantidad1 * precio1) + (cantidad2 * precio2)}</p></li>`
+
+    let product = document.getElementById("proyecto").value;
+    document.getElementById("nombre").innerText = product;
+}
+

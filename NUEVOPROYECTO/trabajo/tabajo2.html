@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="trabajo2.css">
-    <script src="trabajo2.js"></script>
-    <title>trabajo presentar</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="trabajo2.css">
+        <script src="./trabajo2.js"></script>
+    <title>Calculo de producto</title>
 </head>
 <body>
-    <div class="container">
-        <label for="nombre"> nombre del subproyecto</label>
-        <input type="">
+    <div>
+        <input type="text" id="proyecto" placeholder="ingrese el nombre de su proyecto">
     </div>
+    <div class="form1">
+        <select name="productos" id="productos" onchange="precio1()">
+            <option value="">Seleccionar</option>
+            <option value="2500000">computador</option>
+            <option value="900000">telefono</option>
+            <option value="54000">internet</option>
+            <option value="30000">mesas</option>
+        </select>
+        <input type="number" placeholder="cantidad" id="cantidad1">
+        <input type="number" placeholder="precio" readonly id="precio1">
+    </div>
+    <div class="form2">
+        <select name="productos2" id="productos2" onchange="precio2()">
+            <option value="">Seleccionar</option>
+            <option value="150000">Licencias</option>
+            <option value="75000">nube</option>
+            <option value="85000">servidor</option>
+            
+        </select>
+        <input type="number" placeholder="cantidad" id="cantidad2">
+        <input type="number" placeholder="precio" readonly id="precio2">
+    </div>
+    <button onclick="calcular()">Calcular</button>
+    <button onclick="getFactura()">Generar factura</button>
 
-    <div class="container">
-        <div class="primer">
-            <label for="producto" name="nombre1" id="nombre"> nombre de producto</label>
-            <input type="text">
-            <label for="cantidad1"> cantidad </label>
-            <input type="number" name="cantidad1" id="cantidad1">
-            <label for="valor1"> valor </label>
-            <input type="number" name="valor1" id="valor1">
-        </div>
-    </div>
     
-    <div class="container">
-        <div class="primer">
-            <label for="producto">nombre de producto</label>
-            <input type="text">
-            <label for="cantidad2"> cantidad 2</label>
-            <input type="number" name="cantidad2" id="cantidad2">
-            <label for="valor2"> valor 2</label>
-            <input type="number" name="valor2" id="valor2">
-        </div>
-    </div>
+    <p>Total Producto1</p>
+    <p id="total1"></p>
     
-    <div class="boton">
-        <label for="sumatotal"></label>
-        <button onclick="valortotal()"> valor total</button>
-        <button onclick="getfiche()">factura</button>
-    </div>
+    <p>Total Producto2</p>
+    <p id="total2"></p>
     
-    <p id="resultado1" class="los"></p>
-    <p id="resultado2" class="los"></p>
+    <p>Total</p>
+    <p id="totalAbsoluto"></p>
+
     <hr>
-    <p id="resultado3" class="los"></p>
-    <p id="factura1"></p>
-    <p id="factura2"></p>
-    <p id="factura3"></p>
-    <p id="factura4"></p>
+    
+    <p id="nombre"></p>
+   
+    <ul id="factura"></ul>
 
 </body>
 </html>
