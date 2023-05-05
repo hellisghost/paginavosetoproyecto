@@ -1,12 +1,4 @@
-function precio1() {
-    var selectProduct1 = document.getElementById("productos")
-    var precio1 = selectProduct1.options[selectProduct1.selectedIndex].value
-    var inputPrecio1 = document.getElementById("valor")
-    inputPrecio1.value = precio1
-}
-
-
-function des_dolar(){
+function dolares(){
     let resultado = document.getElementById("resultado")
     let cantidad = document.getElementById("cantidad").value
     let descuento = (cantidad / 4000)
@@ -15,7 +7,7 @@ function des_dolar(){
     resultado.innerText = nuevototal
 }
 
-function des_euro(){
+function euros(){
     let resultado = document.getElementById("resultado1")
     let cantidad = document.getElementById("cantidad").value
     let descuento = (cantidad / 3500)
@@ -24,7 +16,7 @@ function des_euro(){
     resultado.innerText = nuevototal
 }
 
-function des_yuan(){
+function yuanes(){
     let resultado = document.getElementById("resultado2")
     let cantidad = document.getElementById("cantidad").value
     let descuento = (cantidad / 35)
