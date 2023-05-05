@@ -13,3 +13,7 @@ background-attachment: fixed;
 flex-direction: column;
 color: chartreuse;
 }
+
+.link {
+    color: chartreuse;
+}
