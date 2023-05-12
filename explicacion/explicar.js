@@ -1,53 +1,58 @@
 //mostrar el resultado HTML
-const a = document.querySelector("#datoNombre")
-const b = document.querySelector("#datoApellido")
-const c = document.querySelector("#elemail")
-const d = document.querySelector("#ladireccion")
-const e = document.querySelector("#eltelefono")
-const f = document.querySelector("#lafecha")
+const s = document.querySelector("#datoIdentidad")
+const nn = document.querySelector("#datoNumero")
+const n = document.querySelector("#datoNombre")
+const a = document.querySelector("#datoApellido")
+const f = document.querySelector("#datoFecha")
+const e = document.querySelector("#datoEmail")
+const t = document.querySelector("#datoTelefono")
+
 
 function almacenarData(){
-    let nom, ape, ema, dir, tel, fec
+    let nom, ape, fec, ema, tel, idt, num
     //capturar la data del html
+    idt = document.getElementById("identidad").value
+    num = document.getElementById("numero").value
     nom = document.getElementById("nombre").value
     ape = document.getElementById("apellido").value
-    ema = document.getElementById("email").value
-    dir = document.getElementById("direccion").value
-    tel = document.getElementById("telefono").value
     fec = document.getElementById("fecha").value
-
+    ema = document.getElementById("correo").value
+    tel = document.getElementById("telefono").value
     //almacenamiento de la data con localStorage
+    localStorage.setItem("identidad", idt)
+    localStorage.setItem("Numero", num)
     localStorage.setItem("Nombre", nom)
     localStorage.setItem("Apellido", ape)
+    localStorage.setItem("Fecha", fec) 
     localStorage.setItem("Correo", ema)
-    localStorage.setItem("Direccion", dir)
-    localStorage.setItem("Telefonico", tel)
-    localStorage.setItem("Fecha", fec)
+    localStorage.setItem("Telefono", tel)
+ 
     /*Limpiando los campos o inputs*/
-    document.getElementById("nombre").value = "";
-    document.getElementById("apellido").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("direccion").value = "";
-    document.getElementById("telefono").value = "";
-    document.getElementById("fecha").value = "";
+    document.getElementById("identidad").value = ""
+    document.getElementById("numero").value = ""
+    document.getElementById("nombre").value = ""
+    document.getElementById("apellido").value = ""
+    document.getElementById("fecha").value = ""
+    document.getElementById("correo").value = ""
+    document.getElementById("telefono").value = ""
+    
 }
-
 function cargarData(){
-    let nombre,apellido,email,direccion,telefono,fecha
-    nombre = localStorage.getItem("Nombre");
-    apellido = localStorage.getItem("Apellido");
-    email = localStorage.getItem("Correo");
-    direccion = localStorage.getItem("Direccion");
-    telefono = localStorage.getItem("Telefonico");
-    fecha = localStorage.getItem("Fecha");
-    /*Mostrar datos almacenados*/      
-    a.innerHTML = nombre;
-    b.innerHTML = apellido; 
-    c.innerHTML = email; 
-    d.innerHTML = direccion; 
-    e.innerHTML = telefono; 
-    f.innerHTML = fecha; 
-
-    document.getElementById("datoNombre").innerText = nombre;
+    let nombre,apellido,fecha,correo,telefono,identidad
+    identidad = localStorage.getItem("identidad")
+    numero = localStorage.getItem("Numero")
+    nombre = localStorage.getItem("Nombre")
+    apellido = localStorage.getItem("Apellido")
+    fecha = localStorage.getItem("Fecha")
+    correo = localStorage.getItem("Correo")
+    telefono = localStorage.getItem("Telefono")
+    /*Mostrar datos almacenados*/     
+    s.innerHTML = identidad; 
+    nn.innerHTML = numero;
+    n.innerHTML = "<b>"+nombre+"</b>"
+    a.innerHTML = apellido; 
+    f.innerHTML = fecha;
+    e.innerHTML = correo;
+    t.innerHTML = telefono;
 }
 

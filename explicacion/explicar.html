@@ -4,34 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LocalStorage</title>
+    <title>kevin</title>
     <script defer src="explicar.js"></script>
 
 </head>
 <body>
-    <h1>Ejemplo - LocalStorage</h1>
-    <input type="text" id="nombre" placeholder="Nombre"><br><br>
+    <h1>Ejercicio</h1>
+    
+    <select name="identidad" id="identidad">
+        <option id="seleccionar">seleccione</option>
+        <option value="tarjeta de identidad" id="ti">tarjeta de identidad</option>
+        <option value="cedula de ciud" id="cc">cedula de ciudadania</option>
+        <option value="cedula de extranjeria" id="ce">cedula de extranjeria</option>
+    </select>
+    <input type="number" id="numero" placeholder="Numero"><br><br>
+    <input type="text" id="nombre" placeholder="Nombre">
     <input type="text" id="apellido" placeholder="Apellido"><br><br>
-    <input type="email" id="email" placeholder="Correo"><br><br>
-    <input type="text" id="direccion" placeholder="Direccion"><br><br>
-    <input type="number" id="telefono" placeholder="Telefonico"><br><br>
-    <p>Fecha de Nacimiento</p><input type="date" id="fecha" placeholder="Fecha"><br><br>
-    
-    <button onclick="almacenarData()">Guardar</button>
+    <input type="email" id="correo" placeholder="Correo">
+    <input type="number" id="telefono" placeholder="Telefono"><br><br>
+    <input type="date" id="fecha" placeholder="Fecha"><br><br>
     <hr>
-    <p>Nombre almacenado: <j id="datoNombre"></j></p>
-    <p>Apellido almacenado: <j id="datoApellido"></j></p>
-    <p>Email almacenado: <j id="elemail"></j></p>
-    <p>Dirección almacenado: <j id="ladireccion"></j></p>
-    <p>Telefono almacenado: <j id="eltelefono"></j></p>
-    <p>Nacimiento almacenado: <j id="lafecha"></j></p>
-    
+
     <p>
-        <button onclick="cargarData()">Cargar elementos</button>
+        <button class="boton" onclick="almacenarData()">Guardar</button>
+        <button onclick="cargarData()">Cargar elementos</button><br>
+        <a href="fichatecnica.html" target="_blank">Continuar</a>
     </p>
-
-    <br><br>
-    <a href="fichatecnica.html" target="_blank" onclick="cargardata()"> <button>continuar</button></a>
-
 </body>
 </html>

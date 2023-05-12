@@ -4,26 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ficha tecnica</title>
-    <script src="explicar.js"></script>
-    <script>
-        window.onload = function() {
-    cargarData()
-}
-    </script>
-
-</head>
+    <title>Document</title>
+    <script defer src="explicar.js"></script>
+    <script defer src="fichatecnica.js"></script>
+   
 <body>
-
-   <h1>Ejemplo - LocalStorage</h1>
-    <p>Nombre almacenado: <j id="datoNombre"></j></p>
-    <p>Apellido almacenado: <j id="datoApellido"></j></p>
-    <p>Email almacenado: <j id="elemail"></j></p>
-    <p>Dirección almacenado: <j id="ladireccion"></j></p>
-    <p>Telefono almacenado: <j id="eltelefono"></j></p>
-    <p>Nacimiento almacenado: <j id="lafecha"></j></p>
-
+    <table>
+        <tr>
+            <th class="titulo" colspan="3">RESULTADOS</th>
+        </tr>
+        <tr>
+            <th class="dc-color1">Identificacion</th>
+            <th class="dc-color"><p><j id="datoIdentidad"></j></p></th>
+            <th class="dc-color"><p><j id="datoNumero"></j></p></th>
+        </tr>
+        <tr>
+            <th class="dos1">Nombre/apellido</th>
+            <th class="dos"><p><j id="datoNombre"></j></p></th>
+            <th class="dos"><p><j id="datoApellido"></j></p></th>
+        </tr>
+        <tr>
+            <th class="tres1">Fecha nacimiento</th>
+            <th class="tres" colspan="2"><p><j id="datoFecha"></j></p></th>
+        </tr>
+        <tr>
+            <th class="cuatro1">Correo electronico</th>
+            <th class="cuatro" colspan="2"><p><j id="datoEmail"></j></p></th>
+        </tr>
+        <tr>
+            <th class="cinco1">Numero de telefono</th>
+            <th class="cinco" colspan="2"><p><j id="datoTelefono"></j></p></th>
+        </tr>
+    </table>
     
-
 </body>
 </html>
